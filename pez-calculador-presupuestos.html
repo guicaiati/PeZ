@@ -1,47 +1,100 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>Pez. Diseño + Comunicación. Presupuesto páginas web.</title>
-		<!-- CSS -->
-		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-		<link rel="stylesheet" href="css/estilos.css">
-		<!-- TIPOGRAFIAS -->
-		<link href="https://fonts.googleapis.com/css2?family=Ubuntu+Mono:wght@400;700&display=swap" rel="stylesheet">
-		<!--  Scripts -->
-		<script type="text/javascript" src="https://code.jquery.com/jquery-3.5.0.min.js"></script>
-		<script type="text/javascript" src="js/funciones.js"></script>
-	</head>
-	<body>
-		<!-- Home -->
-		<section>
-			<div class="card-columns">
-				<div class="card pez">
-					<div class="card-body text-center">
-						<h1 class="card-title" style="font-size: 97px;">{Pez}</h1>
-						<p class="card-text">
-							<small class="text-muted">Diseño + Comunicacón</small>
-						</p>
-					</div>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Pez. Diseño + Comunicación. Presupuesto páginas web.</title>
+	<!-- CSS -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+		integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+	<link rel="stylesheet" href="css/estilos.css">
+	<!-- TIPOGRAFIAS -->
+	<link href="https://fonts.googleapis.com/css2?family=Ubuntu+Mono:wght@400;700&display=swap" rel="stylesheet">
+	<!--  Scripts -->
+	<script type="text/javascript" src="https://code.jquery.com/jquery-3.5.0.min.js"></script>
+	<script type="text/javascript" src="js/precios.js"></script>
+	<script type="text/javascript" src="js/funciones.js"></script>
+</head>
+
+<body>
+	<!-- Home -->
+	<section id="home" class="col-md-10 offset-md-1 seccion-pantalla fade-seccion visible mt-0 mb-0 pb-0">
+		<h2 class="h1 mb-4 text-center">Bienvenido. <span class="text-muted">¿Qué necesitas hoy?</span></h2>
+		<div class="card-columns">
+			<!-- Logo Pez -->
+			<div class="card pez">
+				<div class="card-body text-center">
+					<h1 class="card-title" style="font-size: 97px;">{Pez}</h1>
+					<p class="card-text">
+						<small class="text-muted">Diseño + Comunicación</small>
+					</p>
 				</div>
 			</div>
-		</section>
-		<!-- Presupuesto impreción -->
+
+			<!-- Atajo Sitio Web (Baja al calculador) -->
+			<div class="card celeste">
+				<a href="#sitio-web" class="btn w-100"
+					style="padding: 1.25rem; text-decoration: none; color: inherit; transition: background-color 0.3s; cursor: pointer;">
+					<span class="badge griz c-blanco mb-2">Presupuestos</span>
+					<h3 class="font-weight-bold">SITIO WEB</h3>
+					<p class="mb-0">Calculadora dinámica de inversiones para armado de webs, hosting y dominio. Armá tu
+						presupuesto a medida.</p>
+				</a>
+			</div>
+
+			<!-- Atajo Diseño Gráfico -->
+			<div class="card amarillo">
+				<a href="#diseno-grafico" class="btn w-100"
+					style="padding: 1.25rem; text-decoration: none; color: inherit; transition: background-color 0.3s; cursor: pointer;">
+					<span class="badge rojo c-blanco mb-2">Branding</span>
+					<h3 class="font-weight-bold">DISEÑO GRÁFICO</h3>
+					<p class="mb-0">Construyo la identidad visual de tu marca. Desde el rediseño de un logo hasta
+						manuales de marca y papelería.</p>
+				</a>
+			</div>
+
+			<!-- Atajo Ilustración -->
+			<div class="card rosa">
+				<a href="#ilustracion" class="btn w-100"
+					style="padding: 1.25rem; text-decoration: none; color: inherit; transition: background-color 0.3s; cursor: pointer;">
+					<span class="badge amarillo mb-2">Arte</span>
+					<h3 class="font-weight-bold">ILUSTRACIÓN</h3>
+					<p class="mb-0">Arte vectorial, diseño de personajes y piezas creativas únicas para destacar tu
+						identidad al diferencial.</p>
+				</a>
+			</div>
+
+			<!-- Atajo Redes Sociales -->
+			<div class="card azul">
+				<a href="#redes" class="btn w-100"
+					style="padding: 1.25rem; text-decoration: none; color: inherit; transition: background-color 0.3s; cursor: pointer;">
+					<span class="badge griz-claro mb-2">Marketing</span>
+					<h3 class="font-weight-bold c-blanco">REDES SOCIALES</h3>
+					<p class="mb-0 c-blanco">Llevá tu marca al siguiente nivel. Gestión estratégica, placas de contenido
+						y diseño de campañas.</p>
+				</a>
+			</div>
+		</div>
+	</section>
+	<!-- Presupuesto impresión -->
 	<section></section>
 	<!-- Presupuesto sitio web -->
-	<section id="sitio-web" class="col-md-12">
+	<section id="sitio-web" class="col-md-12 seccion-pantalla fade-seccion">
 		<div class="row">
 			<div class="col-md-2 info">
 				<div>
 					<h2>#Sitio web</h2>
 					<h3 class="h4">Calcula tu presupuesto.</h3>
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+						labore et dolore magna aliqua.</p>
 					<p class="h1"><span>$</span><span class="resultado">0</span></p>
 				</div>
 				<div id="contacto">
-					<a href="http://api.whatsapp.com/send?phone=5491156533834&text=Hola!%20Quiero%20pedir%20un%20presupuesto">
-						<p class="h4 link verde">_Whatsup</p>
+					<a id="btn-whatsapp"
+						href="https://api.whatsapp.com/send?phone=5491156533834&text=Hola!%20Quiero%20pedir%20un%20presupuesto"
+						target="_blank" rel="noopener noreferrer">
+						<p class="h4 link verde">_WhatsApp</p>
 					</a>
 					<p class="h4 link celeste">_Facebook</p>
 					<p class="h4 link griz-claro">_email</p>
@@ -53,7 +106,7 @@
 						<div class="card-body text-center">
 							<h1 class="card-title" style="font-size: 97px;">{Pez}</h1>
 							<p class="card-text">
-								<small class="text-muted">Diseño + Comunicacón</small>
+								<small class="text-muted">Diseño + Comunicación</small>
 							</p>
 						</div>
 					</div>
@@ -64,9 +117,10 @@
 									<div class="card-body">
 										<label class="btn form-check-label waves-effect waves-light">
 											<span class="badge rojo c-blanco">Diseño</span>
-											<input class="" value="0" type="radio" name="op1" checked="checked">
+											<input class="" value="op1_template" type="radio" name="op1"
+												checked="checked">
 											<h3>TEMPLATE</h3>
-											<p>El cliente me suministra el diseño.</p>
+											<p>Uso de plantilla HTML pre-armada.</p>
 										</label>
 									</div>
 								</div>
@@ -74,7 +128,7 @@
 									<div class="card-body">
 										<label class="btn form-check-label waves-effect waves-light">
 											<span class="badge rojo c-blanco">Diseño</span>
-											<input value="6250" type="radio" name="op1">
+											<input value="op1_medida" type="radio" name="op1">
 											<h3>DISEÑO A MEDIDA</h3>
 											<p>Yo me encargo del diseño</p>
 										</label>
@@ -86,7 +140,7 @@
 									<div class="card-body">
 										<label class="btn form-check-label waves-effect waves-light">
 											<span class="badge griz c-blanco">Hosting</span>
-											<input value="0" type="radio" name="op2">
+											<input value="op2_nohosting" type="radio" name="op2">
 											<h3>Ya tengo hosting</h3>
 											<p>Ya tengo hosting</p>
 										</label>
@@ -96,7 +150,7 @@
 									<div class="card-body">
 										<label class="btn form-check-label waves-effect waves-light">
 											<span class="badge griz c-blanco">Hosting</span>
-											<input value="700" type="radio" name="op2" checked="checked">
+											<input value="op2_hosting1a" type="radio" name="op2" checked="checked">
 											<p>Hosting por 1 año</p>
 										</label>
 									</div>
@@ -107,7 +161,7 @@
 									<div class="card-body">
 										<label class="btn form-check-label waves-effect waves-light">
 											<span class="badge griz-claro">Dominio</span>
-											<input value="0" type="radio" name="op4">
+											<input value="op4_nodominio" type="radio" name="op4">
 											<p>Tengo un dominio</p>
 										</label>
 									</div>
@@ -116,7 +170,7 @@
 									<div class="card-body">
 										<label class="btn form-check-label waves-effect waves-light">
 											<span class="badge griz-claro">Dominio</span>
-											<input value="480" type="radio" name="op4" checked="checked">
+											<input value="op4_comar" type="radio" name="op4" checked="checked">
 											<p>.COM.AR</p>
 										</label>
 									</div>
@@ -127,7 +181,7 @@
 									<div class="card-body">
 										<label class="btn form-check-label waves-effect waves-light">
 											<span class="badge amarillo">Tamaño</span>
-											<input value="7000" type="radio" name="op3" checked="checked">
+											<input value="op3_p1" type="radio" name="op3" checked="checked">
 											<p>1 página</p>
 										</label>
 									</div>
@@ -136,7 +190,7 @@
 									<div class="card-body">
 										<label class="btn form-check-label waves-effect waves-light">
 											<span class="badge amarillo">Tamaño</span>
-											<input value="10000" type="radio" name="op3">
+											<input value="op3_p4" type="radio" name="op3">
 											<p>4 paginas</p>
 										</label>
 									</div>
@@ -145,34 +199,36 @@
 									<div class="card-body">
 										<label class="btn form-check-label waves-effect waves-light">
 											<span class="badge amarillo">Tamaño</span>
-											<input value="18750" type="radio" name="op3">
+											<input value="op3_p6" type="radio" name="op3">
 											<h3>CATÁLOGO.</h3>
-											<p>6 páginas.</p></label>
-										</div>
+											<p>6 páginas.</p>
+										</label>
 									</div>
-									<div class="card rosa">
-										<div class="card-body">
-											<label class="btn form-check-label waves-effect waves-light">
-												<span class="badge amarillo">Tamaño</span>
-												<input value="25000" type="radio" name="op3">
-												<h3>CATÁLOGO + CARRITO DE COMPRAS.</h3>
-												<p>8 páginas.</p>
-											</label>
-										</div>
+								</div>
+								<div class="card rosa">
+									<div class="card-body">
+										<label class="btn form-check-label waves-effect waves-light">
+											<span class="badge amarillo">Tamaño</span>
+											<input value="op3_p8" type="radio" name="op3">
+											<h3>CATÁLOGO + CARRITO DE COMPRAS.</h3>
+											<p>8 páginas.</p>
+										</label>
 									</div>
-									<!-- <div class="card">
+								</div>
+								<!-- <div class="card">
 										<div class="card-body">
 											<div class="btn-primary">
 													
 											</div>
 										</div>
 									</div> -->
-								</fieldset>
-							</div>
-						</form>
-					</div>
+							</fieldset>
+						</div>
+					</form>
 				</div>
 			</div>
-		</section>
-	</body>
+		</div>
+	</section>
+</body>
+
 </html>

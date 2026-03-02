@@ -1,5 +1,5 @@
-body{
-	font-family: 'Ubuntu Mono', monospace;
+body {
+    font-family: 'Ubuntu Mono', monospace;
 }
 
 /*.btn-primary:not([disabled]):not(.disabled):active,
@@ -12,52 +12,102 @@ body{
 
 /*/////////ORGANIZAR/////////*/
 
-        [type="radio"]:not(:checked),
-        [type="radio"]:checked {
-            position: absolute;
-            pointer-events: none;
-            opacity: 0;
-        }
-	/*colores*/
-	.azul{background-color: #5e95fc}
-	.rosa{background-color: #ef71bd}
-	.griz-claro{background-color: #d4d5d5}
-	.verde{background-color:#0dd464}
-	.celeste{background-color: #78d7d9}
-	.rojo{background-color: #fb604c}
-	.amarillo{background-color: #fdd336}
-	.amarillo-claro{background-color: #f7f0c0}
-	.griz{background-color: #6e6f71}	
-	/*fuentes*/
-	.c-negro{color: black}
-	.c-blanco{color: white}
-	/*agreados*/
-    .card-body {
+[type="radio"]:not(:checked),
+[type="radio"]:checked {
+    position: absolute;
+    pointer-events: none;
+    opacity: 0;
+}
+
+/*colores*/
+.azul {
+    background-color: #5e95fc
+}
+
+.rosa {
+    background-color: #ef71bd
+}
+
+.griz-claro {
+    background-color: #d4d5d5
+}
+
+.verde {
+    background-color: #0dd464
+}
+
+.celeste {
+    background-color: #78d7d9
+}
+
+.rojo {
+    background-color: #fb604c
+}
+
+.amarillo {
+    background-color: #fdd336
+}
+
+.amarillo-claro {
+    background-color: #f7f0c0
+}
+
+.griz {
+    background-color: #6e6f71
+}
+
+/*fuentes*/
+.c-negro {
+    color: black
+}
+
+.c-blanco {
+    color: white
+}
+
+/*agreados*/
+.card-body {
     padding: 0px;
 }
+
 label {
     padding: 1.25rem;
     width: 100%;
 }
-.pez, .info{padding: 1.25rem;}
+
+.pez,
+.info {
+    padding: 1.25rem;
+}
+
 .card-columns {
     -webkit-column-gap: 0rem;
     -moz-column-gap: 0rem;
     column-gap: 0rem;
 }
+
 .card {
 
     border: 0px;
     border-radius: 0px;
 
 }
+
 .btn {
-	text-align: inherit;
+    text-align: inherit;
     border-radius: 0px;
 
 }
-.card-columns .card{padding: 0px; margin: 0px}
-.btn-primary{border: 0px}
+
+.card-columns .card {
+    padding: 0px;
+    margin: 0px
+}
+
+.btn-primary {
+    border: 0px
+}
+
 /*.info{background-color: #fdd336}*/
 .card-columns .card {
 
@@ -65,6 +115,7 @@ label {
     width: 100%;
 
 }
+
 /*.rojo{color: white; background-color: #fb604c}*/
 .card.pez {
     padding: 12px;
@@ -72,4 +123,30 @@ label {
     background-size: 42.00px 42.00px;
 }
 
-#contacto{position: fixed;bottom: 0}
+#contacto {
+    position: fixed;
+    bottom: 0
+}
+
+/* Animaciones de Secciones (Scroll en Pantalla) */
+html {
+    scroll-behavior: smooth;
+}
+
+.seccion-pantalla {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.fade-seccion {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+.fade-seccion.visible {
+    opacity: 1;
+    transform: translateY(0);
+}

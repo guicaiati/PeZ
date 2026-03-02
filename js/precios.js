@@ -1,0 +1,12 @@
+const preciosDatos = {
+    "op1_template": 0,
+    "op1_medida": 45000,
+    "op2_nohosting": 0,
+    "op2_hosting1a": 15000,
+    "op4_nodominio": 0,
+    "op4_comar": 8500,
+    "op3_p1": 55000,
+    "op3_p4": 95000,
+    "op3_p6": 140000,
+    "op3_p8": 190000
+};
